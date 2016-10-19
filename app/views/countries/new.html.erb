@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>drag and drop app </title>
+<body>
+
+<%= form_for(@country) do |f| %>
+
+<%= f.label :name %><br/>
+<%= f.text_field :name %><br/><br/>
+
+<div class="actions">
+    <%= f.submit "Create" %><br/> 
+  </div> 
+<% end %>
+
+</body>
+</head>
+</html>

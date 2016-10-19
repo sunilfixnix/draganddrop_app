@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>drag and drop app </title>
+<body>
+<table>
+
+<tr>
+<th>name</th>
+</tr>
+<tr>
+<% @country.each do |c| %>
+<td><%= c.name %></td><br/>
+</tr>
+</table>
+<% end %><br/>
+
+<%= link_to 'New Country', countries_countries_new_path %>
+
+<form>
+  select country name:<td>
+<select>
+  <option value="name">select</option>
+  <% @country.each do |c| %>
+<option><%= c.name %></option>
+<% end %>
+</select>
+</td>
+</form>
+
+</body>
+</head>
+</html>

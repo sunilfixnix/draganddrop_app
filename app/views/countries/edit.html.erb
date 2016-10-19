@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>drag and drop app </title>
+<body>
+
+<%= form_for @country, :url =>{:action => "update", :id =>@country} do |f| %>
+
+<%= f.label :name %><br/>
+<%= f.text_field :name %><br/><br/>
+
+<div class="actions">
+    <%= f.submit "Update" %><br/> 
+  </div> 
+<% end %>
+
+</body>
+</head>
+</html>

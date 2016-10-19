@@ -1,0 +1,2 @@
+class TehsilsController < ApplicationController
+end
